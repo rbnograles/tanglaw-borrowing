@@ -1,0 +1,8 @@
+[
+    {
+      "origin": ["https://tanglaw-repository-system.herokuapp.com", "http://localhost:3000"],
+      "responseHeader": ["Content-Type"],
+      "method": ["GET", "HEAD", "DELETE"],
+      "maxAgeSeconds": 3600
+    }
+]

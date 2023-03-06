@@ -1,0 +1,430 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+/* Variable colors */
+:root {
+  --white: #ffffff;
+  --red: #ad2828;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+.App {
+  padding-bottom: 5rem;
+}
+.custom-page-title {
+  padding: 0 0 20px 0;
+}
+.custom-page-title h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+/* home */
+.home-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.center-icon{
+  margin: auto 0;
+}
+.sub-tag {
+  font-size: 14px;
+  font-weight: 500 ;
+  color: #969696;
+}
+/* dashboard */
+.dashboard-subheaders {
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  color: #ad2828 !important;
+  font-weight: bold;
+}
+.header-label {
+  margin-top: 10px;
+}
+/* tables */
+.lock-component {
+  background-color: rgb(241, 239, 239);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: start;
+  padding-top: 25px;
+  padding-left: 7px;
+}
+.tableWarnings {
+  padding-top: 10px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+/* comment section */
+.comment-panel {
+  width: 37%;
+  position: relative;
+  height: 80vh;
+}
+.comment-content {
+  max-height: 80%;
+  overflow-y: scroll;
+  margin: 0 20px;
+  background: rgb(245, 245, 245);
+}
+.comment-content::-webkit-scrollbar {
+  display: none;
+}
+.comment-header {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.comment-input-container {
+  max-height: 150px;
+  overflow-y: scroll;
+  margin-top: 10px;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.comment-input-container::-webkit-scrollbar {
+  display: none;
+}
+.abs-btn {
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+.send-button {
+  height: 35px;
+  top: 10;
+  width: 10%;
+}
+.comment-input {
+  width: 90%;
+}
+.comment-body p {
+  font-size: 12px;
+}
+.comment-body span {
+  color: #636363;
+  font-size: 12px;
+}
+/* counters */
+.counterCards {
+  width: 25%;
+  height: 100px;
+  background-color: #ad2828;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: white;
+}
+.final-card {
+  margin-right: 0!important;
+}
+.counter-content-container {
+  padding: 10px 20px;
+}
+.counter-content-container .count {
+  font-weight: bold;
+  font-size: 30px;
+}
+/* top 5 displays */
+.top5-container {
+  height: 10%;
+  width: 100%;
+  padding: 5px;
+}
+.search-label-display {
+  text-transform: uppercase;
+  font-size: 14px !important;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+.search-count-label {
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #969696;
+}
+/* list cards */
+.lits-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ad2828;
+  margin-bottom: 5px;
+}
+.lits-abstract {
+  font-size: 15px;
+  color: rgb(80, 80, 80);
+}
+.static-label {
+  font-size: 15px;
+  margin-top: 3px;
+  color: #969696;
+}
+/* charts */
+.chart-label {
+  font-size: 15px;
+  font-weight: bold;
+}
+.chart-container {
+  height: 350px;
+  width: 100%;
+  padding: 10px;
+}
+.chart-container p {
+  font-size: 20px;
+}
+/* sidebar */
+.active-panel {
+  background-color: #ca4747;
+  color: #fff;
+}
+.css-1f8bwsm {
+  min-width: 35px !important;
+}
+.active-icon {
+  color: #fff !important;
+}
+.sidebar-label-panel {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+/* forms */
+.form-container {
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+.css-1869usk-MuiFormControl-root {
+  min-width: 50% !important;
+}
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/* search custom */
+.tanglaw__sidebar-search {
+  margin-top: 1rem;
+}
+.search-container {
+  background-color: var(--white);
+}
+.active{
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+.mini-button {
+  min-width: 40px !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+/* pagingnation */
+.pagination-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.pagination-item {
+  padding: 0 12px;
+  height: 32px;
+  text-align: center;
+  margin: auto 4px;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  letter-spacing: 0.01071em;
+  border-radius: 16px;
+  line-height: 1.43;
+  font-size: 13px;
+  min-width: 32px;
+}
+.pagination-item.dots:hover {
+  background-color: transparent;
+  cursor: default;
+}
+.pagination-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+.pagination-item.selected {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.pagination-item.arrow::before {
+  position: relative;
+  /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+  content: '';
+  /* By using an em scale, the arrows will size with the font */
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.12em solid rgba(0, 0, 0, 0.87);
+  border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+}
+.pagination-item.arrow.left {
+  transform: rotate(-135deg) translate(-50%);
+}
+.pagination-item.arrow.right {
+  transform: rotate(45deg);
+}
+.pagination-item.arrow.disabled {
+  pointer-events: none;
+}
+.pagination-item.arrow::before {
+  border-right: 0.12em solid rgba(0, 0, 0, 0.43);
+  border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+}
+.pagination-item.arrow:hover {
+  background-color: transparent;
+  cursor: default;
+}
+/* empty display */
+.page-empty-container {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.bg-circle {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(202, 188, 188);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.page-empty-container .header-1 {
+  font-size: 60px;
+  color: rgb(202, 188, 188);
+  font-weight: bold;
+}
+.page-empty-container .icon-header {
+  font-size: 100px;
+  color: #ffffff;
+}
+.page-empty-container .header-2 {
+  font-size: 20px;
+  color: rgb(202, 188, 188);
+}
+/* article display */
+.articleName {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ad2828;
+}
+.small-content {
+  font-size: 15px;
+  margin-left: 10px;
+}
+.small-label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.article-sub-header {
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.text-content {
+  text-indent: 40px;
+}
+.inline-text-decor {
+  font-size: 14px;
+  color: #969696;
+}
+/* overrides */
+.css-19kzrtu {
+  padding: 10px !important;
+}
+.css-10hburv-MuiTypography-root {
+  font-size: .90rem !important;
+}
+.search-input .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  top: -6px !important;
+  color: var(--white) !important;
+  border-color: var(--white) !important;
+}
+.search-input .css-p0rm37 {
+  top: -6px !important;
+  color: var(--white) !important;
+  border-color: var(--white) !important;
+}
+.search-input .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: var(--white) !important;
+}
+.search-input .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  color: var(--white) !important;
+}
+.MuiDataGrid-cell {
+  padding: 2px !important;
+}
+.MuiDataGrid-cellContent {
+  margin-left: 10px !important;
+}
+.css-cveggr-MuiListItemIcon-root {
+  min-width: 40px !important;
+}
+/* scaling */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+  }
+
+  .section__margin {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+}

@@ -1,0 +1,17 @@
+export const departments = [
+    "Bachelor of Science in Civil Engineering (BSCE)",
+    "Bachelor of Science in Computer Engineering (BSCoE)",
+    "Bachelor of Science in Electrical Engineering (BSEE)",
+    "Bachelor of Science in Electronics Engineering(BSECE)",
+    "Bachelor of Science in Mechanical Engineering (BSME)",
+    "Bachelor of Science in Industrial Engineering (BSIE)",
+    "Bachelor of Science in Railway Engineering (BSRE)",
+    "Diploma in Civil Engineering Technology (DCvET)",
+    "Diploma in Computer Engineering Technology (DCET)",
+    "Diploma in Electrical Engineering Technology (DEET)",
+    "Diploma in Electronics Engineering Technology (DECET)",
+    "Diploma in Information Communication Technology (DICT)",
+    "Diploma in Mechanical Engineering Technology (DMET)",
+    "Diploma in Office Management Technology (DOMT)",
+    "Diploma in Railway Engineering Technology (DRET)",
+]
